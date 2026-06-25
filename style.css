@@ -1,0 +1,76 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#120A2A,#2D1457,#5B21B6);
+min-height:100vh;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+.container{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:30px;
+max-width:1200px;
+width:100%;
+}
+.left,.right{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:24px;
+padding:35px;
+box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+.logo{width:90px;display:block;margin:auto auto 20px;filter:drop-shadow(0 0 20px #c084fc)}
+.left h1{text-align:center;font-size:2.5rem}
+.left>p{text-align:center;color:#d8b4fe;margin:12px 0 30px}
+.senha-card,.forca-card,.grupo{
+background:#22163f;
+border-radius:18px;
+padding:20px;
+margin-top:20px;
+}
+.senha-box{display:flex;gap:10px;margin-top:10px}
+#campo-senha{
+flex:1;background:none;border:none;color:#fff;font-size:1.5rem;outline:none}
+.senha-box button,.parametro-senha__botao{
+background:#8b5cf6;border:none;color:#fff;padding:12px 18px;border-radius:12px;cursor:pointer;transition:.3s}
+.senha-box button:hover,.parametro-senha__botao:hover{background:#c084fc;transform:scale(1.05)}
+.parametro-senha-botoes{display:flex;align-items:center;justify-content:center;gap:10px}
+.parametro-senha__texto{font-size:1.3rem}
+.grupo label{display:block;margin:14px 0}
+.checkbox{accent-color:#a855f7;margin-right:8px}
+.barra{
+    width:100%;
+    height:18px;
+    background:#2d2347;
+    border-radius:50px;
+    overflow:hidden;
+    margin:15px 0;
+}
+
+.forca{
+    width:25%;
+    height:100%;
+    border-radius:50px;
+    transition:all .5s ease;
+}
+.legenda{display:flex;justify-content:space-between;color:#d8b4fe;margin-top:8px}
+@media(max-width:900px){.container{grid-template-columns:1fr}}
+.fraca{
+    width:25%;
+    background:#ef4444;
+}
+
+.media{
+    width:60%;
+    background:#facc15;
+}
+
+.forte{
+    width:100%;
+    background:#22c55e;
+}

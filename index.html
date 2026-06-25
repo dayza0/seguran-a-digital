@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<section class="left">
+<img src="ChatGPT Image 25 de jun. de 2026, 18_55_11.png" class="logo" alt="Cadeado">
+<h1>Password Generator</h1>
+<p>Gere senhas fortes, únicas e seguras.</p>
+
+<div class="senha-card">
+<label>Sua senha</label>
+<div class="senha-box">
+<input id="campo-senha" type="text" readonly>
+<button>📋</button>
+</div>
+</div>
+
+<div class="forca-card">
+<h3>Força da senha</h3>
+<div class="barra">
+    <div class="forca fraca"></div>
+</div>
+<div class="forca fraca"></div>
+<div class="legenda"><span>Fraca</span><span>Média</span><span>Forte</span></div>
+<p class="entropia"></p>
+</div>
+</section>
+
+<aside class="right">
+<h2>⚙ Configurações</h2>
+
+<div class="grupo">
+<h4>Número de caracteres</h4>
+<div class="parametro-senha-botoes">
+<button class="parametro-senha__botao">-</button>
+<p class="parametro-senha__texto">12</p>
+<button class="parametro-senha__botao">+</button>
+</div>
+</div>
+
+<div class="grupo">
+<h4>Características</h4>
+
+<label><input name="maiusculo" class="checkbox" type="checkbox" checked> Letras maiúsculas</label>
+<label><input name="minusculo" class="checkbox" type="checkbox"> Letras minúsculas</label>
+<label><input name="numero" class="checkbox" type="checkbox"> Números</label>
+<label><input name="simbolo" class="checkbox" type="checkbox"> Símbolos</label>
+</div>
+</aside>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
